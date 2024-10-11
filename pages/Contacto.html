@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto</title>
+    <link href="../src/style/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/style/nosotross.css" />
+
+    <style>
+      .container {
+        
+      }
+      .info-column {
+        flex: 1;
+
+        padding: 10px;
+      }
+      .iframe-container {
+        display: flex;
+        justify-content: center; /* Centra el iframe */
+        margin: 20px 0;
+        width: 100%; /* Asegura que ocupe el ancho completo */
+       &  iframe {
+        width: 100%;
+        max-width: 600px; /* Ancho máximo del iframe */
+        height: 1200px; /* Aumentar la altura para mostrar más contenido */
+        border: none; /* Sin borde en el iframe */
+      }
+      }
+     
+      @media (max-width: 600px) {
+        .info-column {
+          max-width: 90%; /* Ancho máximo en móviles */
+        }
+       .iframe-container  iframe {
+          height: 500px; /* Ajustar altura para móviles */
+        }
+        .container-contacto{
+        width: 80%;
+      }
+     
+      }
+       .correo,.presupuesto{
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+  <nav class="nav-mobile">
+       <div class="button-nav" >
+          <button><a href="#">Blog</a></button>
+          <div>
+            <a href="#" class="servicio">Servicios</a>
+            <div class="dropdown-mobile">
+              <button><a href="RepPuertas.html">Reparación de carpinteria</a></button>
+              <button><a href="MueblesMedida.html">Muebles a medida</a></button>
+              <button><a href="RepMuebles.html">Montaje de muebles</a></button>
+              <button><a href="InstalarPuertas.html">Instalación de puertas</a></button>
+            </div>
+          </div>
+          <button><a href="Nosotros.html">Nosotros</a></button>
+          <button><a href="Contacto.html">Contacto</a></button>
+      </div>
+    </nav>
+
+    <header class="header">
+      <a href="index.html" class="logo" id="top">
+        <img
+          src="../src/img/logos/serviblancoh y negro.png"
+          alt="company logo"
+          class="logo-img"
+        />
+      </a>
+      <button class="hamburger hamburger--collapse"  type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    </button>
+      <nav class="nav">
+
+        <ul class="nav-menu">
+          <li><a href="#">Blog</a></li>
+          <li>
+            <a href="#" >Servicios</a>
+            <ul class="dropdown">
+              <li><a href="RepPuertas.html">Reparación de carpinteria</a></li>
+              <li><a href="MueblesMedida.html">Muebles a medida</a></li>
+              <li><a href="RepMuebles.html">Montaje de muebles</a></li>
+              <li><a href="InstalarPuertas.html">Instalación de puertas</a></li>
+            </ul>
+          </li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+        <div class="botones-header">
+        <a href="tel:+34963471515"
+          ><button
+            class="boton-header"
+            style="background-image: url(../src/img/logos/contacto.png)"
+          ></button
+        ></a>
+        <button
+          class="boton-header"
+          style="background-image: url(../src/img/logos/cuenta.png)"
+        ></button>
+      </div>
+   
+    </header>
+    <div class="puertas">
+      <h1>CONTACTA CON NOSOTROS</h1>
+    </div>
+    <div class="puertass">
+      <img src="../src/img/imagenes/contact.jpg"  alt="puertas" />
+      <div class="container-contacto">
+        <h2>Ponte en contacto</h2>
+        <div class="container">
+          <div class="info-column">
+            <p><strong>Nuestra Ubicación:</strong></p>
+            <p>
+              Polígono Virgen de la Salud<br />C/Ferradors, 42<br />46950
+              Xirivella (VALENCIA)
+            </p>
+            <p>
+              <strong>Llamanos: </strong
+              ><a class="telf" href="tel:963471515">96 347 15 15</a>
+            </p>
+            <p class="correo">
+              <strong>Envianos un correo:</strong>
+              <a class="telf" href="mailto:multiservicio@servihogarvalencia.com"
+                >multiservicio@servihogarvalencia.com</a
+              >
+            </p>
+            <p class="presupuesto">
+              O bien si ya necesitas presupuesto completa
+              <a href="https://servihogar.noobox.cloud/request_estimate/form/1"
+                >este formulario</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nueva fila para el primer iframe -->
+    <div class="iframe-container">
+      <iframe
+        src="https://servihogar.noobox.cloud/request_estimate/form/1"
+        scrolling="no"
+      ></iframe>
+    </div>
+    <footer>
+      <div class="contenedor">
+        <div class="footer-row">
+          <div class="columna1">
+            <img src="../src/img/logos/logo blanco.png" alt="logoserv" />
+            <p>
+              Esta empresa ha obtenido en fecha 16/12/2021 una ayuda destinada
+              al fomento del empleo, a través del Programa ECOVUT/2021, con
+              número de expediente ECOVUT/2021/921/46 por importe de 13.300
+              euros, la cual está cofinanciada por el Fondo Social Europeo.
+            </p>
+          </div>
+          <div class="columna2">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.4901310887785!2d-0.4379392249039896!3d39.45825471341836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604fc6971cc89f%3A0x500ea493007c69d2!2sAsociaci%C3%B3n%20Industriales%20Pol%C3%ADgono%20Virgen%20De%20La%20Salud!5e0!3m2!1ses!2sco!4v1728607077859!5m2!1ses!2sco" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h1>SERVIHOGAR VALENCIA</h1>
+            <p>Polígono Virgen de la Salud C/Ferradors, 42 46950 Xirivella</p>
+          </div>
+ 
+        </div>
+      </div>
+    </footer>
+  </body>
+   <script type="module" src="../src/script/index.js"></script>
+</html>
